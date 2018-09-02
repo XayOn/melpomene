@@ -1,23 +1,27 @@
 [[source]]
 
-verify_ssl = true
 url = "https://pypi.python.org/simple"
+verify_ssl = true
 name = "pypi"
+
+
+[packages]
+
+docopt = "*"
+requests-html = "==0.6.6"
+click = "*"
+opencv-python = "*"
+numpy = "*"
 
 
 [dev-packages]
 
+behave = "*"
+pytest = "*"
+pytest-cov = "*"
+"pytest-flake8" = "*"
 
 
 [requires]
 
 python_version = "3.7"
-
-
-[packages]
-
-opencv-python = "*"
-requests-html = "*"
-ipython = "*"
-click = "*"
-tableprint = "*"
